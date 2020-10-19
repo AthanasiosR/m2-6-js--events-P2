@@ -19,9 +19,22 @@ const people = [
 
 function fullName(peopleArr) {
   // return something
+  let newArry = [];
+  peopleArr.forEach((person) => {
+    let fullName = [];
+    fullName.push(`${person.name.first}`);
+    if (person.name.middle !== undefined) {
+      fullName.push(`${person.name.middle}`);
+    }
+    fullName.push(`${person.name.last}`);
+    newArry.push(fullName.join(" "));
+  });
+  return newArry;
 }
 
 // 2. Do a console.log to verify your function.
+
+console.log(fullName(people));
 
 // 3. Run the test to validate: yarn test exercise-3
 

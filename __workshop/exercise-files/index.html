@@ -9,6 +9,47 @@
     <title>Signup Form</title>
   </head>
   <body>
-    <script src="script.js"></script>
+    <div class="form">
+      <form id="signupForm">
+        <h1 class="title">Signup Form</h1>
+        <div class="userInfo">
+          <label for="full-name">Full Name:</label>
+          <input required type="text" id="fullName" />
+        </div>
+        <div class="userInfo">
+          <label for="streetAddress">Street address:</label>
+          <input required type="text" id="streetAddress" />
+        </div>
+        <div class="userInfo">
+          <label for="emailAddress">Email address:</label>
+          <input required type="email" id="emailAddress" />
+        </div>
+        <div class="userInfo">
+          <label for="phoneNumber">Phone number:</label>
+          <input required type="tel" id="phoneNumber" />
+        </div>
+        <div class="userInfo">
+          <label for="password">Password:</label>
+          <input required type="password" id="password" />
+        </div>
+        <div class="userInfo">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input required type="password" id="confirmPassword" />
+        </div>
+        <div class="termsOfService">
+          <input type="checkbox" id="terms" value="agree" />
+          <label
+            >I agree to the
+            <a href="#termsOfServices">terms of services</a></label
+          >
+        </div>
+        <div id="error" class="error"></div>
+        <footer class="clearSubmit">
+          <button class="ClearButton">Clear</button>
+          <button class="SubmitButton">Submit</button>
+        </footer>
+      </form>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
